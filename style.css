@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./assets/Norse-Bold.otf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+#banner {
+    display: flex;
+    background: url(./assets/halie-west-25xggax4bSA-unsplash.jpg) center/cover no-repeat;
+    flex: 3;
+    height: 100vh;
+    position: relative;
+    min-width: 270px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    font-family: "Norse Bold", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 6rem;
+    line-height: 1rem;
+}
+
+.logo img {
+    max-height: 150px;
+}
+
+.credits {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    align-self: flex-end;
+    margin-bottom: 3%;
+}
+
+#contact-form {
+    flex: 5;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#contact-form .firts-chart {
+    max-width: 800px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding-left: 50px;
+    margin-bottom: 60px;
+}
+
+.module {
+    background-color: white;
+    box-shadow: 0 5px 5px #dbdbdb;
+    padding: 20px 0px 20px 50px;
+}
+
+.module .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3643;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 25px 50px;
+    max-width: 700px;
+}
+
+.form-inputs div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    min-width: 300px;
+    position: relative;
+}
+
+label {
+    color: #5b6673;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+input {
+    appearance: none;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    line-height: 2rem;
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:invalid + span::after {
+    content: "* Passwords do not match";
+    color: red;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: -20px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(26, 26, 214);
+    box-shadow: 2px 2px 5px #bbb;
+}
+
+form button {
+    margin: 40px 50px;
+    padding: 15px 50px;
+    background-color: #596d48;
+    box-shadow: 2px 2px 5px #aaa;
+    color: white;
+    font-size: 1.10rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+
+form button:hover {
+    cursor:pointer;
+}
+
+form > p {
+    padding-left: 50px;
+    font-weight: 500;
+}
+
+form a {
+    color: #596d48;
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
